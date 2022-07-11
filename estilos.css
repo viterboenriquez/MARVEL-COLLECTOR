@@ -1,0 +1,234 @@
+*{margin: 0px;
+	padding: 0;
+	box-sizing: border-box;
+	
+}
+body{
+	font-family: 'Open Sans';
+}
+header{
+	background-color: #f2f2f2;
+	text-align: center;
+	padding: 25px;
+}
+nav a{
+	display: inline-block;
+	text-decoration: none;
+	color: #696969;
+	margin: 0 30px;
+	padding: 5px 15px;
+	border-radius: 30px;
+}
+nav a:hover{
+	background-color: #000;
+	color:#fff;
+}
+.encabezado-img{
+	background-image: url(img/arana.jpg);
+	background-size: cover;
+	height: 600px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	color: #fff;
+}
+.encabezado-img p{
+	font-size: 18px;
+}
+.encabezado-img h1{
+	font-size: 50px;
+	padding: 10px 0;
+}
+.encabezado2-img{
+	background-image: url(img/aranaa.jpg);
+	background-size: cover;
+	height: 600px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	color: #fff;
+	text-align: center;
+
+}
+.encabezado2-img p{
+	font-size: 25px;
+    width: 1000px;
+    height: 30px;
+}
+.encabezado2-img h1{
+	font-size: 25px;
+	padding: 10px 0;
+}
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.galeria.html{
+    font-family: 'open sans';
+    text-align: center;
+}
+
+.galeria.html h1{
+    text-align: center;
+    margin:20px 0 15px 0;
+    font-weight: 300;
+}
+
+.linea{
+    border-top: 5px solid #0077C0;
+    margin-bottom: 40px;
+}
+
+.contenedor-imagenes{
+    display:flex;
+    width: 85%;
+    margin: auto;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    border-radius:3px;
+}
+
+.contenedor-imagenes .imagen{
+    width: 32%;
+    position: relative;
+    height:250px;
+    margin-bottom:5px;
+    box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, .75)
+}
+.imagen img{
+    width: 100%;
+    height:100%;
+    object-fit: cover;
+}
+
+.overlay{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background:rgba(0, 118, 192, 0.781) ;
+    width: 100%;
+    height: 0;
+    overflow: hidden;
+    transition: .5s ease;
+}
+
+.overlay h2{
+    color: #fff;
+    font-weight: 300;
+    font-size:30px;
+    position: absolute;
+    top: 50%;
+    left:50%;
+    text-align: center;
+    transform: translate(-50%, -50%);
+}
+
+.imagen:hover .overlay{
+    height:100%;
+    cursor: pointer;
+}
+
+@media screen and (max-width:1000px){
+    .contenedor-imagenes{
+        width: 95%;
+    }
+}
+
+@media screen and (max-width:700px){
+    .contenedor-imagenes{
+        width: 90%;
+    }
+    .contenedor-imagenes .imagen{
+        width: 48%;
+    }
+}
+
+@media screen and (max-width:450px){
+    h1{
+        font-size:22px;
+    }
+    .contenedor-imagenes{
+        width: 98%;
+    }
+    .contenedor-imagenes .imagen{
+        width: 80%;
+    }
+}	
+.galeria h1{
+	text-align: center;
+	font-size: 50px;
+	padding: 10px 0;
+	text-decoration-color: white;
+
+}
+
+* {
+  margin: 0;/*establece el margen para los cuatro lados. */
+  padding: 0;/*establece el espacio de relleno requerido por todos los lados de un elemento. El área de padding es el espacio entre el contenido del elemento y su borde*/
+  box-sizing: border-box; /*le dice al navegador tomar en cuenta para cualquier valor que se especifique de borde o de relleno para el ancho o alto de un elemento.*/
+}
+
+body {
+  font-family: arial;/*define una lista de fuentes o familias de fuentes, con un orden de prioridad, para utilizar en un elemento seleccionado.*/
+  background-image: url(img/.jpg); /*e emplea para establecer la imagen de fondo de cada elemento. La imagen se muestra en la zona que ocupan el contenido y el relleno del elemento, justo hasta su borde. Para indicar la imagen que se muestra como fondo de un elemento, se utiliza una URL.*/
+}
+
+.form-login {
+  width: 400px;
+  height: 340px;
+  background: #000000; /*se puede establecer de forma directa el color de fondo*/
+  margin: auto; /*establece el margen para los cuatro lados. */
+  margin-top: 180px;
+  box-shadow: 7px 13px 37px #000;
+  padding: 20px 30px;
+  border-top: 4px solid #017bab;
+  color: white;
+}
+
+.form-login h5 {
+  margin: 0; /*establece el margen para los cuatro lados. */
+  text-align: center;/*Alineacion del texto H5*/
+  height: 40px;/*altura del elemento H5*/
+  margin-bottom: 30px; /*Alineacion de las cajas de texto o inputs*/
+  border-bottom: 1px solid;/*Linea superior del formulario*/
+  font-size: 20px; /*Tamaño de las fuentes*/
+}
+
+.controls {
+  width: 100%;/*Ancho de los inputs*/
+  border: 1px solid #017bab;/*tamaño del borde de los inputs*/
+  margin-bottom: 15px;/*Espaciado entre los botones*/
+  padding: 14px 10px; /*Ancho de las cajas de los imputs*/
+  background: #252323; /*Color de fondo de las cajas de los inputs*/
+  font-size: 14px;/*Tamaño de los textos de los inputs*/
+  font-weight: bold;/*Estilo de las fuentes de los inputs en este caso negritas*/
+}
+
+.buttons {
+  width: 100%; /*especifica la anchura del area de contenido de un elemento.*/
+  height: 40px; /*especifica la altura del area de contenido de un elemento.*/
+  background: #017bab; /*se puede establecer de forma directa el color de fondo*/
+  border: none; /*permite definir en una única regla todos los bordes de los elementos seleccionados. En este caso sin borde*/
+  color: white; /*selecciona el valor de color de primer plano del contenido de elemento de texto y decoraciones de texto*/
+  margin-bottom: 16px; /*(margen-inferior) es la propiedad de un elemento que establece el espacio requerido en la parte inferior de un elemento. */
+}
+
+.form-login p{
+  height: 40px;/*especifica la altura del area de contenido de un elemento.*/
+  text-align: center; /*no sólo controla la alineación del texto. En realidad, esta propiedad establece la alineación de los contenidos (texto, imágenes) que se encuentran dentro de un elemento de bloque*/
+  border-bottom: 1px solid;/*linea inferior del formulario*/
+}
+
+.form-login a {
+  color: white;/*Color del enlace*/
+  text-decoration: none;/*Quitar el subrayado del enlace*/
+  font-size: 18 px; /*Establece el tamaño de la fuente del enlace*/
+}
+
+.form-login a:hover {
+  text-decoration: underline;/*Decoracion del enlace cuando se pasa el cursor sobre el hipervinculo*/
+}
